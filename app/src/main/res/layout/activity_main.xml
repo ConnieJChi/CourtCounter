@@ -6,7 +6,7 @@
     tools:context="com.example.android.courtcounter.MainActivity">
     <RelativeLayout
         android:id="@+id/Layout_a"
-        android:layout_width="195sp"
+        android:layout_width="196sp"
         android:layout_height="match_parent">
         <TextView
             android:id="@+id/Team_A"
