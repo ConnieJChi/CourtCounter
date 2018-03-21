@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int score_team_a = 0;
     int score_team_b = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.display_points_B);
         scoreView.setText(String.valueOf(score));
     }
+
+    // functions for the different buttonss
     public void addOneForTeamB(View v) {
         score_team_b += 1;
         displayForTeamB(score_team_b);
@@ -63,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         score_team_a += 3;
         displayForTeamA(score_team_a);
     }
+
+    /**
+     *
+     * Reset function for the button
+     */
     public void reset(View v) {
         score_team_a = 0;
         score_team_b = 0;
