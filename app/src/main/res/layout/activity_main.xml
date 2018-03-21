@@ -26,19 +26,23 @@
             android:textSize="20sp" />
         <Button
             android:id="@+id/three_points_a"
+            android:layout_marginTop="5sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/two_points_a"
             android:layout_centerHorizontal="true"
             android:text="+3 points"
+            android:background="#f4cb42"
             android:onClick="addThreeForTeamA"/>
         <Button
             android:id="@+id/free_throw_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/display_points_A"
+            android:background="#f4cb42"
             android:layout_centerHorizontal="true"
-            android:text="Free Throw"
+            android:text="  Free Throw "
+
             android:onClick="addOneForTeamA"/>
         <Button
             android:id="@+id/two_points_a"
@@ -46,7 +50,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/free_throw_a"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
             android:text="+2 points"
+            android:background="#f4cb42"
+
             android:onClick="addTwoForTeamA"/>
     </RelativeLayout>
     <RelativeLayout
@@ -75,7 +82,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/two_points_b"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
             android:onClick="addThreeForTeamB"
+            android:background="#bc9923"
             android:text="+3 points"/>
         <Button
             android:id="@+id/free_throw_b"
@@ -84,15 +93,30 @@
             android:layout_below="@id/display_points_B"
             android:layout_centerHorizontal="true"
             android:onClick="addOneForTeamB"
-            android:text="Free Throw" />
+            android:background="#bc9923"
+            android:text="  Free Throw  " />
         <Button
             android:id="@+id/two_points_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/free_throw_b"
             android:layout_centerHorizontal="true"
-
+            android:layout_marginTop="5sp"
+            android:background="#bc9923"
             android:onClick="addTwoForTeamB"
             android:text="+2 points"/>
     </RelativeLayout>
+
+    <Button
+        android:layout_alignBottom="@id/Layout_a"
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:background="#218cd3"
+        android:onClick="reset"
+        android:text="Reset"/>
+
 </RelativeLayout>
